@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>KeyForge</title>
+</head>
+<body>
+    <section class="main">
+        <h1 class="title">KeyForge</h1>
+        <div class="passwordGenContainer">
+            <p class="passwordGenContainer_p">Personalize & check or uncheck the options to create your password!</p>
+            <form method="post" class="passwordGenContainer_form">
+                <div class="labels">
+                    <label for="charQuantityInput">
+                        <p class="labelNumber">Password length</p>
+                        <input type="number" class="charQuantityInput">
+                    </label>
+                    <label for="letterCheckbox">
+                        <input type="checkbox" class="letterCheckbox checkBox">Letters
+                    </label>
+                    <label for="numbersCheckbox">
+                        <input type="checkbox" class="numbersCheckbox checkBox">Numbers
+                    </label>
+                    <label for="charCheckbox">
+                        <input type="checkbox" class="charCheckbox checkBox">Characters
+                    </label>
+                </div>
+                <button type="submit" class="passwordGenButton">Generate</button>
+            </form>
+            <div class="passwordGenerated">
+                <h4>Your password</h4>
+                <div class="yourPass">
+                    <p class="password"></p>
+                    <i class="fa-regular fa-copy"></i>
+                </div>
+                <button class="back">Back</button>
+            </div>
+        </div>
+    </section>
+    <footer>hola unu</footer>
+    <script src="main.js"></script>
+</body>
+</html>
